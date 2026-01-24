@@ -91,7 +91,7 @@ async function fetchData({ city = null, lat = null, lon = null }) {
     document.getElementById("error").textContent = "";
     return data; //the data is now returned to the caller.
   } catch (error) {
-    showError("Unable to fetch weather data. Please enter a valid city name.");
+    showError("No data found. check internet connection... or city name");
     return null; // return null in case of an error
   }
 }
