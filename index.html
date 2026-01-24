@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample HTML Page</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">De Weather API Project</h1>
+            <p style="text-align: center;">Group Members (<em>Yannick, Annie,
+                    Batex</em>)</p>
+            <hr>
+        </header>
+        <main>
+            <!--Test UI -->
+            <section id="section1" style="text-align: center;">
+                <span id="locationBtn">
+                    <button
+                        onclick="getUserWeatherLocation()"><span>&#x1F4CD;</span>My
+                        currrent location</button>
+                </span>
+                <br>
+                <hr>
+
+                <input type="text" id="city-name" placeholder="Enter city name">
+                <button id="search-button" onclick="searchCity()">Get
+                    Weather</button>
+
+                <!-- the Result  -->
+                <span id="weather-result"></span>
+                <hr>
+                <span id="error" style="color: red;"></span>
+                <hr>
+            </section>
+
+        </main>
+        <footer style="text-align: center;">
+            <p>&copy; 2024 Weather API IAD</p>
+        </footer>
+    </body>
+</html>
