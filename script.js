@@ -53,6 +53,7 @@ function displayWeather(data, isLocationBased = false) {
     <h2>Weather in ${cityname}</h2>
     <p>Temperature: ${temperature} °C</p>
     <p>Description: ${decsription}</p>
+    <p>Windspeed : <b> ${Windspeed} </b> m/s</p>
     <p>Humidity: ${humidity}%</p>
     <span>Icon : <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon"></span>`;
 }
