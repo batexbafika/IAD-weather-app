@@ -47,6 +47,7 @@ function displayWeather(data, isLocationBased = false) {
   const decsription = data.weather[0].description; //retrieves the weather description
   const humidity = data.main.humidity; //retrieves the humidity
   const cityname = data.name; //retrieves the city name
+   const Windspeed = data.wind.speed; //speed
   const icon = data.weather[0].icon; //retrieves the weather icon code
 
   document.getElementById("weather-result").innerHTML = `
