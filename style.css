@@ -20,6 +20,10 @@ body {
     overflow-x: hidden;
 }
 
+#data_values{
+    color: #e8eb25 ;
+}
+
 /* Backgrounds */
 body::before {
     content: "";
