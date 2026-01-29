@@ -56,7 +56,7 @@ function displayWeather(data, isLocationBased = false) {
     <p>Description: ${decsription}</p>
     <p>Windspeed : <b> ${Windspeed} </b> m/s</p>
     <p>Humidity: ${humidity}%</p>
-    <span>Icon : <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon"></span>`;
+    <span><img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon"></span>`;
 }
 
 //Get the data from the API : try catch, assync , await, fetch.s
