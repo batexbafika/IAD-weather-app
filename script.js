@@ -47,13 +47,15 @@ function displayWeather(data, isLocationBased = false) {
   const decsription = data.weather[0].description; //retrieves the weather description
   const humidity = data.main.humidity; //retrieves the humidity
   const cityname = data.name; //retrieves the city name
+  const Windspeed = data.wind.speed; //speed
   const icon = data.weather[0].icon; //retrieves the weather icon code
 
   document.getElementById("weather-result").innerHTML = `
-    <h2>Weather in ${cityname}</h2>
-    <p>Temperature: ${temperature} °C</p>
-    <p>Description: ${decsription}</p>
-    <p>Humidity: ${humidity}%</p>
+    <h2>Weather in <b>${cityname}</b></h2>
+    <p>Temperature: <b>${temperature}</b> °C</p>
+    <p>Description:<b> ${decsription}</b></p>
+    <p>Windspeed : <b> ${Windspeed} </b> m/s</p>
+    <p>Humidity: <b> ${humidity}</b>%</p>
     <span>Icon : <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon"></span>`;
 }
 
