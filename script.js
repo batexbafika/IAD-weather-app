@@ -51,12 +51,12 @@ function displayWeather(data, isLocationBased = false) {
   const icon = data.weather[0].icon; //retrieves the weather icon code
 
   document.getElementById("weather-result").innerHTML = `
-    <h2>Weather in <b>${cityname}</b></h2>
-    <p>Temperature: <b>${temperature}</b> °C</p>
-    <p>Description:<b> ${decsription}</b></p>
-    <p>Windspeed : <b> ${Windspeed} </b> m/s</p>
-    <p>Humidity: <b> ${humidity}</b>%</p>
-    <span>Icon : <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon"></span>`;
+    <h2>Weather in <b id="data_values"> ${cityname}</b></h2>
+    <p>Temperature: <b id="data_values">${temperature} °C<b></p>
+    <p>Description: <b id="data_values"> ${decsription} </b></p>
+    <p>Windspeed : <b id="data_values"> ${Windspeed} m/s </b></p>
+    <p>Humidity: <b id="data_values">${humidity}%</b></p>
+    <span><img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon"></span>`;
 }
 
 //Get the data from the API : try catch, assync , await, fetch.s
